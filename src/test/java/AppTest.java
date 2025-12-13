@@ -29,7 +29,7 @@ public class AppTest
      */
     @Before
     public void beforeEach() throws InterruptedException{
-        app.start(9005);
+        app.start(9000);
         Thread.sleep(3000);
     }
 
