@@ -19,7 +19,11 @@ public class JavalinSingleton {
         app.get("/firstname/{first}", ctx -> {
             
             //write code here
+            //String a = "first";
+            //String firstname = ctx.pathParam(a); COMPLETELY EQUIVALENT
+
             String firstname = ctx.pathParam("first");
+            ctx.result(firstname);
 
         });
 
